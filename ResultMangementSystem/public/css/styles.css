@@ -1,0 +1,41 @@
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb {
+    background: #9c9d9cad;
+    border-radius: 5px;
+    width: 5px;
+  }
+  
+ 
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9c9d9c;
+  }
+ 
+.bg-custom {
+  background: linear-gradient(to right, #4a90e2, #63dbf2); 
+  color: white; 
+}
+
+
+
+
+
+
+
+  
+  

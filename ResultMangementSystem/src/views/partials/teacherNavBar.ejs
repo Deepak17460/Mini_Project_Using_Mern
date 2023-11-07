@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-custom navbar-mainbg">
+    <a class="navbar-brand navbar-logo" href="#">Result(Management)</a>
+    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars text-white"></i>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+           <!-- <div class="hori-selector"><div class="left"></div><div class="right"></div></div>-->
+            <li class="nav-item">
+                <a class="nav-link <%- viewData?.page.includes('/dashboard')  ? 'active' : '' %> " id="dashboard-item" href="/teacher/dashboard"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  <%- viewData?.page.includes('/student/create')  ? 'active' : '' %> " id="create-student-item" href="/teacher/student/create"><i class="far fa-plus"></i>Student</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link <%- viewData?.page.includes('/create')  ? 'active' : '' %> " id="create-teacher-item" href="/teacher/create"><i class="far fa-plus"></i>Teacher</a>
+            </li>
+
+            <li class="nav-item ml-auto">
+                <a class="nav-link" href="/logout">
+                    <i class="fa-solid fa-right-from-bracket fa-sm"></i> Logout
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+</nav>
+<script src="/js/nav.js" defer></script>
+
+
+<!-- <ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link  <%- viewData?.page.includes('/dashboard')  ? 'active' : '' %> " aria-current="page" href="/teacher/dashboard">Dashboard</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link  <%- viewData?.page.includes('/student/create')  ? 'active' : '' %> " href="/teacher/student/create">New Student</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link <%- viewData?.page.includes('/create')  ? 'active' : '' %> " href="/teacher/create">New Teacher</a>
+    </li>
+
+    <li class="nav-item r-0">
+    </li>
+</ul> -->
